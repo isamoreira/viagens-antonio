@@ -1,0 +1,254 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+header {
+    background-color: #007bff; 
+    color: #000; 
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin-top: 10px;
+}
+
+.menu li {
+    margin-right: 20px;
+    margin-top: 3px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #000; /* Preto */
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: #000; /* Preto */
+    margin: 5px;
+}
+
+
+.menu.show {
+    display: flex;
+    flex-direction: column;
+    background-color:#007bff;  
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#sobre {
+    background-color: #f4f4f4; 
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.sobre-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre-content img {
+    width:400px;
+   
+    margin-bottom: 20px;
+}
+
+.sobre-content p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333; /* Cor do texto preto */
+}
+
+#destinos {
+    background-color: #fff; 
+    padding: 50px 0;
+}
+
+.destinos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    justify-items: center;
+}
+
+.destino {
+    text-align: center;
+}
+
+.destino img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.destino h3 {
+    font-size: 20px;
+    color: #333; /* Cor do texto preto */
+}
+
+/* Adicione isso ao seu arquivo CSS */
+#Pacotes {
+    background-color: #f9f9f9; /* Fundo cinza claro */
+    padding: 50px 0;
+}
+
+.pacotes-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.pacote {
+    width: calc(33.33% - 20px); 
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.pacote-header {
+    background-color: #007bff; 
+    color: #fff; 
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.pacote-header h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.preco {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.pacote-body {
+    padding: 20px;
+}
+
+@media(max-width: 768px) {
+    .pacotes-container {
+        flex-direction: column;
+    }
+
+    .pacote {
+        width: 100%;
+    }
+}
+
+.pacote img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#contato {
+    padding: 50px 0;
+}
+
+.formulario {
+    background-color: #fff; 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.formulario form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formulario button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; 
+    color: #fff; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #0056b3; 
+}
+
+
+@media(max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    header nav {
+        flex-direction: column;
+    }
+
+  .sobre-content img {
+    width:200px;
+  }
+}
